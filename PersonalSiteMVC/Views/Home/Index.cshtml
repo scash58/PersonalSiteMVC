@@ -2,30 +2,142 @@
     ViewBag.Title = "Home";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="single_slider  d-flex align-items-center slider_bg_1">
+        <div class="container">
+            <div class="row align-items-center position-relative">
+                <div class="col-lg-9">
+                    <div class="slider_text">
+                        <h3>
+                            Hi there, I am Scott Cashion
+                            <br />
+                            <div id="data-typed-strings">
+                                <span>Full Stack Developer</span>
+                                <span>Web Designer</span>
+                                <span>Fantasy Football Enthusiast</span>
+                            </div>
+                            <span class="typed"></span>
+                        </h3>
+                        <a class="boxed-btn3-line" href="@Url.Action("Portfolio", "Home")">View Works</a>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+                    </div>
+                </div>
+                <!--<div class="my_img d-none d-lg-block">
+                    <img src="img/profilepicnobackground.png" alt="">
+                </div>-->
+            </div>
+        </div>
     </div>
 </div>
+<!-- slider_area_end -->
+
+<section class="download_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50">
+                    <h3>About Me</h3>
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="download_text">
+                    <h3 style="color: #DB9A64;">I’m a Full Stack Developer based in St. Louis, Mo. I enjoy using my obsessive attention to detail, my love for making things, and my tireless work ethic to craft innovative applications</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="download_left">
+                    <p>
+                        I have a Bachelors of Science in Software Engineering that I received in 2015. I am going through the Full Stack Web Developer Program from Centriq Training currently with an anticipated graduation in March of 2022.
+                    </p>
+                    <p>
+                        For the past 15 years, I have worked for two golf courses. During this time, I had many job titles: irrigation tech, mechanic, and assistant superintendent. I have honed many skills over these years including leadership, communication, adaptability, teamwork, troubleshooting, problem solving, and critical thinking.
+                    </p>
+                    <a href="~/Content/Scott-Cashion-Resume.pdf" download="ScottCashionResume" class="boxed-btn3-line">Download Resume</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-6">
+                <div class="progress_skills">
+                    <div class="single_progress">
+                        <div class="label d-flex justify-content-between">
+                            <span>C#</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="single_progress">
+                        <div class="label d-flex justify-content-between">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="single_progress">
+                        <div class="label d-flex justify-content-between">
+                            <span>SQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- service_area start  -->
+<div class="service_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50">
+                    <h3>My Skills</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/1.svg" alt="">
+                    </div>
+                    <h3>
+                        Frontend Development
+                    </h3>
+                    <p>HTML, CSS, Javascript, Bootstrap, React, Responsive/Moblie apps, ect..</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/2.svg" alt="">
+                    </div>
+                    <h3>
+                        Middle Tier
+                    </h3>
+                    <p>C#.Net, Java, ASP.NET, MVC, Visual Studio, ect..</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/3.svg" alt="">
+                    </div>
+                    <h3>
+                        Backend Development
+                    </h3>
+                    <p>ADO.NET, SQL, Microsoft SQL Server, ect..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service_area end  -->
