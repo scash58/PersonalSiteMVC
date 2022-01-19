@@ -56,7 +56,7 @@
                             <div class="col-xl-6 col-lg-7">
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
-                                        <ul id="navigation">
+                                        <ul class="menu" id="navigation">
                                             <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                                             <li><a href="@Url.Action("Resume", "Home")">Resume</a></li>
                                             <li><a href="@Url.Action("Portfolio", "Home")">Portfolio</a></li>
@@ -141,6 +141,32 @@
     <script src="~/Content/js/main.js"></script>
 
     @RenderSection("scripts", required: false)
+
+    <script>
+
+        //Use the selector values found or declared in your stylesheet
+        //for the "active" class. For the code below, your stylesheet
+        //would look something like this: .mainmenu ul li.selected a { //style rules}
+
+        $('.menu li').each(function () {
+
+            //In this example, the class for active highlighting is attached to the <li>,
+            //so we'll need to go one level further to check the href value of the <a>
+            //within that <li> and ensure it matches what is found in the browser URL
+
+            if ($(this).find('a').attr('href') == window.location.pathname) {
+
+                //If they match, add the correct class name for active highlighting.
+                //$(this) refers to the <li>, so we need to find the <a> within it
+                //and check the href attribute.
+
+                $(this).addClass('active');
+
+            }
+
+        });
+
+    </script>
 
 </body>
 </html>
