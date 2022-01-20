@@ -124,6 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -322,6 +323,8 @@
     <Content Include="Content\fonts\themify.woff" />
     <Content Include="Content\js\vendor\typed.js\typed.min.js.map" />
     <Content Include="Content\Scott-Cashion-Resume.pdf" />
+    <Content Include="configs\connections.config" />
+    <Content Include="configs\AppSecretKeys.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -411,10 +414,10 @@
     <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Home\Links.cshtml" />
+    <Content Include="Views\Home\EmailConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

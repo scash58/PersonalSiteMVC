@@ -16,21 +16,7 @@
     <!-- link to fontawesome -->
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/Content/css/magnific-popup.css">
-    <!--<link rel="stylesheet" href="~/Content/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="~/Content/css/fontawesome.css" />
-    <link rel="stylesheet" href="~/Content/css/themify-icons.css">
-    <link rel="stylesheet" href="~/Content/css/nice-select.css">
-    <link rel="stylesheet" href="~/Content/css/flaticon.css">
-    <link rel="stylesheet" href="~/Content/css/gijgo.css">
-    <link rel="stylesheet" href="~/Content/css/animate.css">
-    <link rel="stylesheet" href="~/Content/css/slick.css">
-    <link rel="stylesheet" href="~/Content/css/slicknav.css">
-    <link rel="stylesheet" href="~/Content/css/style.css">
-    <!-- <link rel="stylesheet" href="~/Content/css/responsive.css"> -->
+    @Styles.Render("~/Content/css")
 
 </head>
 
@@ -110,35 +96,9 @@
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- JS here -->
     <script sroc="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="~/Content/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="~/Content/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="~/Content/js/popper.min.js"></script>
-    <script src="~/Content/js/bootstrap.min.js"></script>
-    <script src="~/Content/js/owl.carousel.min.js"></script>
-    <script src="~/Content/js/isotope.pkgd.min.js"></script>
-    <script src="~/Content/js/ajax-form.js"></script>
-    <script src="~/Content/js/waypoints.min.js"></script>
-    <script src="~/Content/js/jquery.counterup.min.js"></script>
-    <script src="~/Content/js/imagesloaded.pkgd.min.js"></script>
-    <script src="~/Content/js/scrollIt.js"></script>
-    <script src="~/Content/js/jquery.scrollUp.min.js"></script>
-    <script src="~/Content/js/wow.min.js"></script>
-    <script src="~/Content/js/nice-select.min.js"></script>
-    <script src="~/Content/js/jquery.slicknav.min.js"></script>
-    <script src="~/Content/js/jquery.magnific-popup.min.js"></script>
-    <script src="~/Content/js/plugins.js"></script>
-    <!-- <script src="~/Content/js/gijgo.min.js"></script> -->
-    <script src="~/Content/js/slick.min.js"></script>
-    <script src="~/Content/js/vendor/typed.js/typed.js"></script>
+    
 
-    <!--contact js-->
-    <script src="~/Content/js/contact.js"></script>
-    <script src="~/Content/js/jquery.ajaxchimp.min.js"></script>
-    <script src="~/Content/js/jquery.form.js"></script>
-    <script src="~/Content/js/jquery.validate.min.js"></script>
-    <script src="~/Content/js/mail-script.js"></script>
-
-    <script src="~/Content/js/main.js"></script>
+    @Scripts.Render("~/bundles/template")
 
     @RenderSection("scripts", required: false)
 

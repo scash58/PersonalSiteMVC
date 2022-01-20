@@ -1,0 +1,33 @@
+﻿@model PersonalSiteMVC.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Email Confirmation";
+}
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>@ViewBag.Title</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ bradcam_area  -->
+<!-- ================ contact section start ================= -->
+<section class="contact-section section_padding">
+    <div class="container">
+
+        <h3>We recieved the following message: </h3>
+
+        <p>@Model.Message</p>
+
+        <h3>
+            We will respond as soon as we can to @Model.Email. Thank you for contacting us!
+        </h3>
+
+    </div>
+</section>
