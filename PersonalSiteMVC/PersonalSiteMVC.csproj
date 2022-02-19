@@ -128,6 +128,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\portfolio\Storefront.jpg" />
     <Content Include="_Archive\_OrginalBootCSS\bootstrap-theme.css" />
     <Content Include="_Archive\_OrginalBootCSS\bootstrap-theme.min.css" />
     <Content Include="_Archive\_OrginalBootCSS\bootstrap.css" />
@@ -418,6 +419,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="_Archive\orginalHtml\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

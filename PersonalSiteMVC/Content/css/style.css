@@ -6325,3 +6325,30 @@ h6 {
     color: #DB9A64;
     font-size: 54px;
 }
+
+.portfolio_carousel {
+    padding: 110px 0 90px 0;
+    /*background: #311E25;*/
+}
+
+/*.portfolio_carousel div {
+        margin: 5px;
+    }*/
+
+    .portfolio_carousel div div a img {
+        border-radius: 20%
+    }
+
+    .portfolio_carousel div div a h3 {
+        color: #DB9A64;
+    }
+
+    .portfolio_carousel div div a h4 {
+        color: #DB9A64;
+        margin: 5px;
+    }
+
+    .portfolio_carousel div div a i {
+        color: #DB9A64;
+        font-size: 30px;
+    }

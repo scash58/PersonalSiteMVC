@@ -36,7 +36,7 @@
         $('.slider_active').owlCarousel({
             loop: true,
             margin: 0,
-            items: 1,
+            items: 3,
             autoplay: true,
             navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
             nav: true,
@@ -71,7 +71,7 @@
         $('.testmonial_active').owlCarousel({
             loop: true,
             margin: 0,
-            items: 1,
+            items: 3,
             autoplay: true,
             navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
             nav: true,
