@@ -128,7 +128,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\portfolio\ReactTodo.jpg" />
     <Content Include="Content\img\portfolio\Storefront.jpg" />
+    <Content Include="Content\img\portfolio\TodoAPI.jpg" />
     <Content Include="_Archive\_OrginalBootCSS\bootstrap-theme.css" />
     <Content Include="_Archive\_OrginalBootCSS\bootstrap-theme.min.css" />
     <Content Include="_Archive\_OrginalBootCSS\bootstrap.css" />
