@@ -35,14 +35,14 @@ namespace PersonalSiteMVC.Controllers
         //get
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            //ViewBag.Message = "Your contact page.";
 
             return View();
         }
 
         //Post
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult Contact(ContactViewModel cvm)
         {
 
@@ -60,9 +60,7 @@ namespace PersonalSiteMVC.Controllers
 
             //Only executes if the form (object) passes model validation
             //build the Message - what we will see when we receive the email
-            string message = $"You have received an email from {cvm.Name} with a " +
-                $"subject of {cvm.Subject}. Please respond to {cvm.Email} with your " +
-                $"response to the following message: <br/>{cvm.Message}";
+            string message = $"You have received an email from {cvm.Name} with a subject of {cvm.Subject}. Please respond to {cvm.Email} with your response to the following message: <br/>{cvm.Message}";
 
             //MailMessage (What sends the email)
             MailMessage mm = new MailMessage(
@@ -107,10 +105,9 @@ namespace PersonalSiteMVC.Controllers
             catch (Exception ex)
             {
 
-                ViewBag.CustomerMessage = $"We're sorry, but your request could not be completed at this time. " +
-                    $"Please try again later. Error Message: <br/> {ex.StackTrace}";
+                ViewBag.CustomerMessage = $"We're sorry, but your request could not be completed at this time. Please try again later. Error Message: <br/> {ex.StackTrace}";
 
-                return View(cvm);
+                return View("EmailConfirmation", cvm);
 
             }
 
